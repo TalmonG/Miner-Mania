@@ -871,8 +871,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.006843567, y: -1126.2539}
-  m_SizeDelta: {x: 45.67709, y: 7.89}
+  m_AnchoredPosition: {x: 0.006843567, y: -1120.1289}
+  m_SizeDelta: {x: 45.6771, y: 8.5536}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &368576313
 MonoBehaviour:
@@ -939,15 +939,15 @@ RectTransform:
   m_GameObject: {fileID: 374618008}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 25.614538, y: 18.4596, z: 18.4596}
+  m_LocalScale: {x: 1.5402, y: 1.5402, z: 1.5402}
   m_Children: []
   m_Father: {fileID: 1238118208}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0034332275, y: 1048.0005}
-  m_SizeDelta: {x: 45.67708, y: 14}
+  m_AnchoredPosition: {x: 0.0037995, y: 1048.0005}
+  m_SizeDelta: {x: 715, y: 147}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &374618010
 MonoBehaviour:
@@ -969,9 +969,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4e4765e850f99794284194b16b583f73, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 39b33f3bec752244ea226d6593f3216a, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -1271,7 +1271,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.3962264, g: 0.20551994, b: 0.12522249, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1408,8 +1408,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 1220, y: 47}
-  m_SizeDelta: {x: 1169.9999, y: 2532.9385}
+  m_AnchoredPosition: {x: 1220, y: 50}
+  m_SizeDelta: {x: 1170, y: 2532}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &592155250
 MonoBehaviour:
@@ -1879,14 +1879,14 @@ RectTransform:
   m_GameObject: {fileID: 1336405658}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.8508424, y: 0.8508424, z: 0.8508424}
+  m_LocalScale: {x: 0.7261344, y: 0.7261344, z: 0.7261344}
   m_Children: []
   m_Father: {fileID: 1238118208}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 125.803696, y: 964.85114}
+  m_AnchoredPosition: {x: 57, y: 992}
   m_SizeDelta: {x: 924.4412, y: 87.5794}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1336405660
@@ -2091,7 +2091,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -1120, y: 47}
+  m_AnchoredPosition: {x: -1120, y: 50}
   m_SizeDelta: {x: 1169.9999, y: 2532.9385}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1646261441
@@ -2682,14 +2682,14 @@ RectTransform:
   m_GameObject: {fileID: 1934943818}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.8508424, y: 0.8508424, z: 0.8508424}
+  m_LocalScale: {x: 0.68662137, y: 0.68662137, z: 0.68662137}
   m_Children: []
   m_Father: {fileID: 1238118208}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 125.803696, y: 1076.6038}
+  m_AnchoredPosition: {x: 36, y: 1088}
   m_SizeDelta: {x: 924.4412, y: 172.5617}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2053100445
@@ -3144,7 +3144,7 @@ RectTransform:
   m_GameObject: {fileID: 2136935436}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.22687213, y: 0.22687213, z: 0.22687213}
+  m_LocalScale: {x: 0.14184272, y: 0.14184272, z: 0.14184272}
   m_Children: []
   m_Father: {fileID: 1238118208}
   m_RootOrder: 3
