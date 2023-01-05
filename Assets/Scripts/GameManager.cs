@@ -173,5 +173,8 @@ public class GameManager : MonoBehaviour
     {
         PlayerPrefs.DeleteAll();
         Debug.Log("Data has been erased!");
+        cash = PlayerPrefs.GetFloat("cash", 0);
+        multiplier = PlayerPrefs.GetInt("multiplier", 1);
+        
     }
 }
