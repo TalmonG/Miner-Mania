@@ -19,10 +19,14 @@ public class GameManager : MonoBehaviour
     public float earningsNewspaper;
     public Text earningsNewspaperText;
 
+    public float cashIncreasedPerSecond;
+
 
     public void Increment()
     {
-        cash += multiplier;
+        cash += multiplier * Time.deltaTime;
+        Debug.Log (Time.deltaTime);
+        Debug.Log (multiplier);
         PlayerPrefs.SetFloat("cash", cash);
     }
 
@@ -60,14 +64,17 @@ public class GameManager : MonoBehaviour
         cash = PlayerPrefs.GetFloat("cash", 0);
     }
 
+    public void FixedUpdate() 
+    {
+       // cashText.text += multiplier * Time.fixedDeltaTime;
+        //Debug.Log (cashText.text);
+        Increment();
+    }
+
     public void Update()
     {
 
         earnings = multiplier;
-
-
-
-
 
         CashConverterFunction();
 
