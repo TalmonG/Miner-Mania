@@ -3,11 +3,17 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 
+
+
+
+
+
 public class GameManager : MonoBehaviour
 {
     public float cash;
     public float earnings;
     public int multiplier;
+    public int clickValue;
     
 
     public Text cashText;
@@ -22,16 +28,21 @@ public class GameManager : MonoBehaviour
     public float cashIncreasedPerSecond;
 
 
-    public void Increment()
+    public void AutoIncrement()
     {
         cash += multiplier * Time.deltaTime;
-        Debug.Log (Time.deltaTime);
-        Debug.Log (multiplier);
         PlayerPrefs.SetFloat("cash", cash);
+    }
+
+    public void ManualIncrement()
+    {
+        cash += clickValue; 
     }
 
     public void Buy(int num)
     {
+    // everytime you upgrade, it increases the price by 15%
+    //from one upgrade to anopther, should be 166% price difference
         if (num == 1 && cash >= 4)
         {
             multiplier += 4;
@@ -60,15 +71,16 @@ public class GameManager : MonoBehaviour
 
     public void Start()
     {
-        multiplier = PlayerPrefs.GetInt("multiplier", 1);
+        multiplier = PlayerPrefs.GetInt("multiplier", 0);
         cash = PlayerPrefs.GetFloat("cash", 0);
+        clickValue = PlayerPrefs.GetInt("clickValue", 1);
     }
 
     public void FixedUpdate() 
     {
        // cashText.text += multiplier * Time.fixedDeltaTime;
         //Debug.Log (cashText.text);
-        Increment();
+        AutoIncrement();
     }
 
     public void Update()
@@ -174,7 +186,8 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.DeleteAll();
         Debug.Log("Data has been erased!");
         cash = PlayerPrefs.GetFloat("cash", 0);
-        multiplier = PlayerPrefs.GetInt("multiplier", 1);
+        multiplier = PlayerPrefs.GetInt("multiplier", 0);
+        clickValue = PlayerPrefs.GetInt("clickValue", 1);
         
     }
 }

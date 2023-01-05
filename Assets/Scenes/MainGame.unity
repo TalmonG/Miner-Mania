@@ -357,7 +357,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 510774437}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: Increment
+        m_MethodName: ManualIncrement
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1215,6 +1215,7 @@ MonoBehaviour:
   cash: 0
   earnings: 0
   multiplier: 0
+  clickValue: 0
   cashText: {fileID: 1934943819}
   earningsText: {fileID: 1336405660}
   cashConverter: 0
