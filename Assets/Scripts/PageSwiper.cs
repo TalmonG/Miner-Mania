@@ -58,6 +58,7 @@ public class PageSwiper : MonoBehaviour, IDragHandler, IEndDragHandler
 
     public void UpgradePanelButton()
     {
+        FindObjectOfType<AudioManager>().Play("Click");
         Vector3 newLocation = panelLocation;
         currentPage--;
         newLocation += new Vector3(Screen.width, 0, 0);
@@ -65,6 +66,7 @@ public class PageSwiper : MonoBehaviour, IDragHandler, IEndDragHandler
     }
     public void MainPanelButton()
     {
+        FindObjectOfType<AudioManager>().Play("Click");
         Vector3 newLocation = panelLocation;
         currentPage--;
         newLocation += new Vector3(Screen.width, 0, 0);
@@ -72,6 +74,7 @@ public class PageSwiper : MonoBehaviour, IDragHandler, IEndDragHandler
     }
     public void SettingPanelButton()
     {
+        FindObjectOfType<AudioManager>().Play("Click");
         Vector3 newLocation = panelLocation;
         currentPage--;
         newLocation += new Vector3(Screen.width, 0, 0);

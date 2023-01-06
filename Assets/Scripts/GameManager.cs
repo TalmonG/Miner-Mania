@@ -36,6 +36,7 @@ public class GameManager : MonoBehaviour
 
     public void ManualIncrement()
     {
+        FindObjectOfType<AudioManager>().Play("Click");
         cash += clickValue; 
     }
 
