@@ -43,27 +43,27 @@ public class GameManager : MonoBehaviour
     {
     // everytime you upgrade, it increases the price by 15%
     //from one upgrade to anopther, should be 166% price difference
-        if (num == 1 && cash >= 4)
+        if (num == 1 && cash >= 15) // change to 15
         {
-            multiplier += 4;
-            cash -= 4;
+            multiplier += 1; // change to 1
+            cash -= 15; // change to 15
             PlayerPrefs.SetFloat("cash", cash);
             PlayerPrefs.SetInt("multiplier", multiplier);
-            earningsNewspaper += 4;
+            earningsNewspaper += 1; // change to 1
         }
 
-        if (num == 2 && cash >= 120)
+        if (num == 2 && cash >= 100) // change to 100
         {
-            multiplier += 120;
-            cash -= 120;
+            multiplier += 2;// change to 2
+            cash -= 100;// change to 100
             PlayerPrefs.SetFloat("cash", cash);
             PlayerPrefs.SetInt("multiplier", multiplier);
         }
 
-        if (num == 3 && cash >= 2880)
+        if (num == 3 && cash >= 1100) // change to 1100
         {
-            multiplier += 2880;
-            cash -= 2880;
+            multiplier += 4; // change to 4
+            cash -= 1100; // change to 1100
             PlayerPrefs.SetFloat("cash", cash);
             PlayerPrefs.SetInt("multiplier", multiplier);
         }
