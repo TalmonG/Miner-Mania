@@ -63,8 +63,24 @@ public class GameManager : MonoBehaviour
 
         if (num == 3 && cash >= 1100) // change to 1100
         {
-            multiplier += 4; // change to 4
+            multiplier += 8; // change to 8
             cash -= 1100; // change to 1100
+            PlayerPrefs.SetFloat("cash", cash);
+            PlayerPrefs.SetInt("multiplier", multiplier);
+        }
+
+        if (num == 4 && cash >= 12000) // change to 12000
+        {
+            multiplier += 47; // change to 47
+            cash -= 12000; // change to 12000
+            PlayerPrefs.SetFloat("cash", cash);
+            PlayerPrefs.SetInt("multiplier", multiplier);
+        }
+
+        if (num == 5 && cash >= 130000) // change to 130000
+        {
+            multiplier += 260; // change to 260
+            cash -= 130000; // change to 130000
             PlayerPrefs.SetFloat("cash", cash);
             PlayerPrefs.SetInt("multiplier", multiplier);
         }
