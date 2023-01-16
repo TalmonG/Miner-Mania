@@ -6,6 +6,8 @@ TagManager:
   tags:
   - GameMusic
   - GameSound
+  - Coin
+  - Canvas
   layers:
   - Default
   - TransparentFX
@@ -42,4 +44,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Coin
+    uniqueID: 1949686761
     locked: 0
