@@ -25,8 +25,8 @@ public class ClickAnimation : MonoBehaviour
     {
         Debug.Log("hi");
         GameObject newCoin = Instantiate (coin, transform.position, transform.rotation);
-        newCoin.transform.SetParent(GameObject.FindGameObjectWithTag("Canvas").transform,false);
-        Destroy(newCoin, 3.0f);
+        newCoin.transform.SetParent(GameObject.FindGameObjectWithTag("CoinSpawner").transform,false);
+        Destroy(newCoin, 5.0f);
         
     }
 

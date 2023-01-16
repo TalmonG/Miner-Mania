@@ -6,8 +6,9 @@ TagManager:
   tags:
   - GameMusic
   - GameSound
-  - Coin
+  - TapMe
   - Canvas
+  - CoinSpawner
   layers:
   - Default
   - TransparentFX
