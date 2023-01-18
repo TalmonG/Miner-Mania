@@ -46,7 +46,7 @@ public class GameManager : MonoBehaviour
     //from one upgrade to anopther, should be 166% price difference
         if (num == 1 && cash >= 15) // change to 15
         {
-            multiplier += 1; // change to 1
+            multiplier += 4; // change to 1
             cash -= 15; // change to 15
             PlayerPrefs.SetFloat("cash", cash);
             PlayerPrefs.SetInt("multiplier", multiplier);
@@ -55,7 +55,7 @@ public class GameManager : MonoBehaviour
 
         if (num == 2 && cash >= 100) // change to 100
         {
-            multiplier += 2;// change to 2
+            multiplier += 8;// change to 2
             cash -= 100;// change to 100
             PlayerPrefs.SetFloat("cash", cash);
             PlayerPrefs.SetInt("multiplier", multiplier);
@@ -63,7 +63,7 @@ public class GameManager : MonoBehaviour
 
         if (num == 3 && cash >= 1100) // change to 1100
         {
-            multiplier += 8; // change to 8
+            multiplier += 32; // change to 8
             cash -= 1100; // change to 1100
             PlayerPrefs.SetFloat("cash", cash);
             PlayerPrefs.SetInt("multiplier", multiplier);
@@ -71,7 +71,7 @@ public class GameManager : MonoBehaviour
 
         if (num == 4 && cash >= 12000) // change to 12000
         {
-            multiplier += 47; // change to 47
+            multiplier += 188; // change to 47
             cash -= 12000; // change to 12000
             PlayerPrefs.SetFloat("cash", cash);
             PlayerPrefs.SetInt("multiplier", multiplier);
@@ -79,7 +79,7 @@ public class GameManager : MonoBehaviour
 
         if (num == 5 && cash >= 130000) // change to 130000
         {
-            multiplier += 260; // change to 260
+            multiplier += 1040; // change to 260
             cash -= 130000; // change to 130000
             PlayerPrefs.SetFloat("cash", cash);
             PlayerPrefs.SetInt("multiplier", multiplier);
@@ -123,6 +123,14 @@ public class GameManager : MonoBehaviour
         {
             cashText.text = "$ " + cashConverter.ToString("F2") + "M"; // Million
         }
+        if (cash >= 1000000000)
+        {
+            cashText.text = "$ " + cashConverter.ToString("F2") + "B"; // Billion
+        }
+        if (cash >= 1000000000000)
+        {
+            cashText.text = "$ " + cashConverter.ToString("F2") + "T"; // Trillion
+        }
         if (cash < 1000)
         {
             cashText.text = "$ " + cash;
@@ -147,6 +155,7 @@ public class GameManager : MonoBehaviour
         {
             earningsText.text = "$ " + earningsConverter.ToString("F2") + "M"; // Million
         }
+        
         if (earnings < 1000)
         {
             earningsText.text = "$ " + earnings;
@@ -168,9 +177,17 @@ public class GameManager : MonoBehaviour
         {
             cashConverter = cash / 1000;
         }
-        if (cash >= 1000000)
+        if (cash >= 1000000) // Million
         {
-            cashConverter = cash / 100000;
+            cashConverter = cash / 1000000;
+        }
+        if (cash >= 1000000000) // Billion
+        {
+            cashConverter = cash / 1000000000;
+        }
+        if (cash >= 1000000000000) // Trillion
+        {
+            cashConverter = cash / 1000000000000;
         }
     }
 
@@ -189,9 +206,17 @@ public class GameManager : MonoBehaviour
         {
             earningsConverter = earnings / 1000;
         }
-        if (earnings >= 1000000)
+        if (earnings >= 1000000) // Million
         {
-            earningsConverter = earnings / 100000;
+            earningsConverter = earnings / 1000000;
+        }
+        if (earnings >= 1000000000) // Billion
+        {
+            earningsConverter = earnings / 1000000000;
+        }
+        if (earnings >= 1000000000000) // Trillion
+        {
+            earningsConverter = earnings / 1000000000000; 
         }
     }
 
