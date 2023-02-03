@@ -10,10 +10,14 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+
+    public GameObject coin;
+
     public float cash;
     public float earnings;
     public int multiplier;
     public int clickValue;
+    public string cashPerSecond;
     
 
     public Text cashText;
@@ -107,6 +111,10 @@ public class GameManager : MonoBehaviour
 
         CashConverterFunction();
 
+        /*if (cash >= 1)
+        {
+            cashText.text = "$ " + cashConverter.ToString("F2"); // Units
+        }*/
         if (cash >= 1000)
         {
             cashText.text = "$ " + cashConverter.ToString("F2") + "K"; // Thousand
@@ -141,7 +149,7 @@ public class GameManager : MonoBehaviour
 
         if (earnings >= 1000)
         {
-            earningsText.text = "$ " + earningsConverter.ToString("F2") + "K"; // Thousand
+            earningsText.text = "$ " + earningsConverter.ToString("F2") + "K " + cashPerSecond; // Thousand
         }
         if (earnings >= 10000)
         {
@@ -232,4 +240,12 @@ public class GameManager : MonoBehaviour
         clickValue = PlayerPrefs.GetInt("clickValue", 1);
         
     }
+
+    public void CoinClick()
+    {
+        Instantiate(coin, transform.position, transform.rotation);
+        //coin.transform.position = new Vector3(Random.Range(465, 645 +1), Random.Range(100, 100 +1), 0);
+    }
+
+
 }
