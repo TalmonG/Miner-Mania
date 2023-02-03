@@ -7,7 +7,9 @@ public class ClickAnimation : MonoBehaviour
 {
     public GameObject coin;
     public GameObject canvas;
-    public int x,y;
+    private int x,y;
+    public int xBoundary;
+    public int yBoundary;
     public float timer;
     public int speed;
 
@@ -19,8 +21,8 @@ public class ClickAnimation : MonoBehaviour
         canvas = GameObject.FindWithTag("Canvas");
         transform.SetParent(canvas.transform);
 
-        x = Random.Range(-100, 100);
-        y = Random.Range(-100, 100);
+        x = Random.Range(-xBoundary, yBoundary);
+        y = Random.Range(-xBoundary, yBoundary);
 
         transform.localPosition = new Vector3(x, y, 0);
         //Debug.Log("Hey1");    
@@ -33,7 +35,7 @@ public class ClickAnimation : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-        transform.position = new Vector3(transform.position.x, transform.position.y, 0);
+        transform.position = new Vector3(transform.position.x, transform.position.y + Time.deltaTime * speed, 0);
 
 
 

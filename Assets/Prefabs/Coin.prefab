@@ -61,7 +61,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -91,10 +91,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coin: {fileID: 2627869528545233070}
   canvas: {fileID: 0}
-  x: 0
-  y: 0
+  xBoundary: 750
+  yBoundary: 750
   timer: 0
-  speed: 0
+  speed: 300
 --- !u!1 &3058609670048969138
 GameObject:
   m_ObjectHideFlags: 0

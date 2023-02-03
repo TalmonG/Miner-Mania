@@ -184,7 +184,7 @@ RectTransform:
   m_LocalScale: {x: 9.363993, y: 9.363993, z: 9.363993}
   m_Children: []
   m_Father: {fileID: 1238118208}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -982,7 +982,7 @@ RectTransform:
   m_LocalScale: {x: 8.350032, y: 8.350032, z: 8.350032}
   m_Children: []
   m_Father: {fileID: 1238118208}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1469,7 +1469,7 @@ RectTransform:
   - {fileID: 1006086343}
   - {fileID: 2078976636}
   m_Father: {fileID: 1238118208}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1569,8 +1569,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coin: {fileID: 2627869528545233070, guid: 20145fd38676f824d9073686abb0488e, type: 3}
   canvas: {fileID: 1238118204}
-  x: 0
-  y: 0
+  xBoundary: 0
+  yBoundary: 0
   timer: 0
   speed: 0
 --- !u!4 &835190670
@@ -1586,36 +1586,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &948407565
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 948407566}
-  m_Layer: 0
-  m_Name: CoinSpawner
-  m_TagString: CoinSpawner
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &948407566
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 948407565}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1264, y: 0, z: -407.10272}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1238118208}
-  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &948728784
 GameObject:
@@ -2075,7 +2045,6 @@ RectTransform:
   - {fileID: 2136935437}
   - {fileID: 1934943821}
   - {fileID: 1336405659}
-  - {fileID: 948407566}
   - {fileID: 457298926}
   - {fileID: 65674486}
   - {fileID: 1398652427}
@@ -2295,7 +2264,7 @@ RectTransform:
   m_LocalScale: {x: 0.8427687, y: 0.8427687, z: 0.8427687}
   m_Children: []
   m_Father: {fileID: 1238118208}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
